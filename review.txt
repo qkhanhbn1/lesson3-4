@@ -1,0 +1,13 @@
+form :
+- input:
+    + id, name , value
+    + type: text, password, email, tel, number, radio, checkbox, file,image, button,date, time,search, color, range
+- select
+    + id, name, 
+    +element: option/optgroup
+    value
+
+-textarea
+    + id, name, rows, cols
+
+    ul>li*5>a[href=#][title=""] + ctrl +space
