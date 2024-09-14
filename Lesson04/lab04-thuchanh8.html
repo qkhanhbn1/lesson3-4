@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+        nav,
+        nav ul,
+        nav li,
+        nav a{
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        }
+        nav{
+        width: 28rem;
+        height: 35px;
+        background-color: green;
+        
+        }
+        nav ul li{
+        position: relative;
+        list-style: none;
+        float: left;
+        display: block;
+        }
+        nav ul li a{
+        display: block;
+        padding: 0 14px;
+        
+        line-height: 35px;
+        text-decoration: none; 
+         
+        font-size: 16px;
+        color: #ffffff;
+    
+        }
+        nav ul li:first-child a{
+        border-left: none;
+        border-right: none;
+        }
+        nav ul li:hover a.b{
+        color: #fbf713;
+        background-color: green;  
+        }
+        ul.submenu{
+        position: absolute;
+        opacity: 0;
+        color: rgb(0, 0, 0);
+        background-color: green;
+        }
+        nav ul li:hover ul.submenu{
+        opacity: 10;
+        }
+       
+        .submenu li {  
+        width: 100%;
+         
+        }
+        nav ul.submenu li:hover a.c{
+        color: #fdf622;
+        background-color: green;
+        }
+        
+    
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#" class="b" >Home</a></li>
+          <li><a href="#" class="b" >About</a></li>
+          <li><a href="#" class="b" >Products</a>
+            <ul class="submenu">
+                <li><a href="#" class="c" >Engineering</a></li>
+                <li><a href="#" class="c" >Telecom</a></li>
+                <li><a href="#" class="c" >Energy</a></li>
+                <li><a href="#" class="c" >Finance</a></li>
+                <li><a href="#" class="c" >Consultancy</a></li>
+              </ul></li>
+          <li><a href="#" class="b" >Services</a></li>
+          <li><a href="#" class="b" >Contact</a></li>
+        </ul>
+      </nav>
+</body>
+</html>

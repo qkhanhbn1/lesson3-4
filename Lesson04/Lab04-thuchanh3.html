@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style> 
+    nav,
+    nav ul,
+    nav li,
+    nav a{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    }
+    nav{
+    width: 28rem;
+    height: 35px;
+    background-color: #bbbcc3;
+    }
+    nav ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    }
+    nav ul li a{
+    display: block;
+    padding: 0 14px;
+    
+    line-height: 35px;
+    text-decoration: none; 
+    border-left:1px solid red; 
+    font-size: 16px;
+    color: #000000;
+
+    }
+    nav ul li:first-child a{
+    border-left: none;
+    border-right: none;
+    }
+    nav ul li:hover a.b{
+    color: #ffffff;
+    background-color: green;  
+    }
+    ul.submenu{
+    position: absolute;
+    opacity: 0;
+    color: rgb(0, 0, 0);
+    background-color: #bbbcc3;
+    }
+    nav ul li:hover ul.submenu{
+    opacity: 10;
+    
+    }
+    .submenu li a{
+    border: 1px solid black; 
+    border-radius: 5px; 
+
+    }
+    .submenu li {
+    padding-right: 150px;    
+    width: 100%;
+     
+    }
+    nav ul.submenu li:hover a.c{
+        color: #ffffff;
+        background-color: green;
+    }
+    
+
+</style>
+<body>
+    <nav>
+        <ul>
+          <li><a href="#" class="b" >Trang chủ</a></li>
+          <li><a href="#" class="b" >Sản phẩm</a>
+            <ul class="submenu">
+                <li><a href="#" class="c" >Lập trình web PHP & My SQL</a></li>
+                <li><a href="#" class="c" >Lập trình web Netcore</a></li>
+                <li><a href="#" class="c" >Lập trình web Java SpringBoot</a></li>
+              </ul>
+            </li>
+          <li><a href="#" class="b" >Dịch vụ</a></li>
+          <li><a href="#" class="b" >GIới thiệu</a></li>
+          <li><a href="#" class="b" >Liên hệ</a></li>
+        </ul>
+      </nav>
+</body>
+</html>
